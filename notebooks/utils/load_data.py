@@ -4,6 +4,7 @@ notebooks/utils/load_data.py
 Load and clean data.
 """
 
+import numpy as np
 import pandas as pd
 from regions import REGIONS
 
