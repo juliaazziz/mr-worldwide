@@ -27,8 +27,11 @@ def run_summary() -> str:
         [sys.executable, SUMMARY_SCRIPT],
         capture_output=True,
         text=True,
-        check=True,
     )
+    if result.returncode != 0:
+        print("Summary script failed. stderr output:")
+        print(result.stderr)
+        sys.exit(1)
     return result.stdout.strip()
 
 def inject(readme: str, content: str) -> str:

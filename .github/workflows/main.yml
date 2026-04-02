@@ -1,4 +1,4 @@
-name: Update README Stats
+name: Update README stats
 
 on:
   push:
