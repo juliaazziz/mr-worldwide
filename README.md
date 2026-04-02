@@ -24,7 +24,13 @@ Reading one book from each country in 2026.
 ### Current stats
 
 <!-- STATS:START -->
+🌍  Countries read         36 / 196  (18.4%)
+  ⭐  Average rating       3.23 / 5.00
+  👩  Female authors        39% of books read
+  🇺🇾  In Spanish            9 books
+  🇬🇧  In English            27 books
 
+  Progress: [█████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 18.4%
 <!-- STATS:END -->
 
 ## Setup
