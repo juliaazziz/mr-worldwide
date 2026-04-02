@@ -6,7 +6,7 @@ Generates summary into stdout to be embedded into README.md.
 import numpy as np
 import pandas as pd
 
-FILENAME = "../data/MrWorldwide.csv"
+FILENAME = "data/MrWorldwide.csv"
 TOTAL_COUNTRIES = 196
 
 def main():
