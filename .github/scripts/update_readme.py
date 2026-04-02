@@ -13,7 +13,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-SUMMARY_SCRIPT = "src/progress.py"
+SUMMARY_SCRIPT = "scripts/progress.py"
 
 # Markers that wrap the auto-generated block in README.md
 MARKER_START = "<!-- STATS:START -->"
