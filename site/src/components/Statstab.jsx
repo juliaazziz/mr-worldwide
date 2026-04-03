@@ -202,7 +202,7 @@ export default function StatsTab() {
 
         <div className="chart-card">
           <h3 className="chart-title">Top Genres</h3>
-          <p className="chart-sub">from books you've finished</p>
+          <p className="chart-sub">from finished books</p>
           <BarChart data={genreBarData} horizontal />
         </div>
       </div>
@@ -211,7 +211,7 @@ export default function StatsTab() {
       <div className="gender-section">
         <div className="chart-card gender-card">
           <h3 className="chart-title">Author Gender</h3>
-          <p className="chart-sub">of books you've read</p>
+          <p className="chart-sub">from finished books</p>
           <div className="gender-vis">
             <div className="donut-wrap">
               <svg viewBox="0 0 120 120" className="donut-svg">
@@ -253,7 +253,7 @@ export default function StatsTab() {
         {/* Language split */}
         <div className="chart-card">
           <h3 className="chart-title">Reading Language</h3>
-          <p className="chart-sub">original vs translation</p>
+          <p className="chart-sub">% of finished books</p>
           <div className="lang-bars">
             {Object.entries(stats.langCounts)
               .sort((a,b) => b[1]-a[1])

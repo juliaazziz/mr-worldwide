@@ -4,9 +4,8 @@
   z-index: 50;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  padding: 0 24px;
+  padding: 4px 24px;
   backdrop-filter: blur(12px);
-  background: rgba(15, 14, 11, 0.92);
 }
 
 .tabnav-inner {

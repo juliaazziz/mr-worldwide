@@ -44,8 +44,8 @@ export default function MapTab() {
         maxZoom: 10,
       })
 
-      // Dark CartoDB tiles
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+      // CartoDB tiles
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
         attribution: '© OpenStreetMap © CARTO',
         subdomains: 'abcd',
         maxZoom: 19,
