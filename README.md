@@ -12,7 +12,7 @@
 Reading one book from each country in 2026.
 
 [![Goodreads](https://img.shields.io/badge/Goodreads-shelf-c9543a?style=flat-square&logo=goodreads&logoColor=white)](https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide)
-![Python](https://img.shields.io/badge/python-3.x-3776ab?style=flat-square&logo=python&logoColor=white)
+[![Deploy](https://img.shields.io/badge/site-deployed-purple?logo=github)](https://juliaazziz.github.io/mr-worldwide/)
 [![StandWithPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg)](https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md)
 
 </div>
@@ -20,6 +20,8 @@ Reading one book from each country in 2026.
 ## About
 
 [Goodreads](https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide) saw it first.
+
+Check out the challenge site [here](https://juliaazziz.github.io/mr-worldwide/).
 
 ### Current stats
 

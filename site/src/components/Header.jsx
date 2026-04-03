@@ -14,7 +14,7 @@ export default function Header() {
         <div className="header-left">
           <div className="header-badge">2026 reading challenge</div>
           <h1 className="header-title">Mr. Worldwide</h1>
-          <p className="header-sub">One book from every country on earth</p>
+          <p className="header-sub">One book from every country on earth. <a href="https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide">Shelf.</a> </p> 
         </div>
 
         <div className="header-right">
