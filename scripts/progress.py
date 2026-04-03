@@ -37,8 +37,8 @@ def main():
     lang_en    = (read['Language'] == 'Inglés').sum()
 
     print("```\r")
-    print(f'  🌍  Countries read:       {n_read:>4} / {TOTAL_COUNTRIES}  ({pct_done:.1f}%)\r')
-    print(f'  ⭐  Average rating:       {avg_rating:.2f} / 5.00\r')
+    print(f'  🌍  Countries read:      {n_read:>4} / {TOTAL_COUNTRIES}  ({pct_done:.1f}%)\r')
+    print(f'  ⭐  Average rating:        {avg_rating:.2f} / 5.00\r')
     print(f'  👩  Female authors:        {female_pct:.0f}% of books read\r')
     print(f'  🇺🇾  In spanish:            {lang_es} books\r')
     print(f'  🇬🇧  In english:            {lang_en} books\r')
