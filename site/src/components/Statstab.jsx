@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { BOOKS, TOTAL_COUNTRIES } from '../data/books.js'
-import StatCard from './StatCard.js'
-import BarChart from './BarChart.js'
+import StatCard from './StatCard.jsx'
+import BarChart from './BarChart.jsx'
 import './StatsTab.css'
 
 const REGION_COLORS = {

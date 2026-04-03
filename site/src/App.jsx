@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header.jsx'
 import TabNav from './components/TabNav.jsx'
 import StatsTab from './components/StatsTab.jsx'
-// import MapTab from './components/MapTab.jsx'
-// import ListTab from './components/ListTab.jsx'
+import MapTab from './components/MapTab.jsx'
+import ListTab from './components/ListTab.jsx'
 import './App.css'
 
 export default function App() {
