@@ -33,7 +33,7 @@ export default function App() {
         </div>
       </main>
       <footer className="site-footer">
-        <span>mr. worldwide · julia azziz · 2025</span>
+        <span><a href="https://github.com/juliaazziz/mr-worldwide" target="_blank" rel="noopener">mr-worldwide</a> · 2026</span>
         <a href="https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide" target="_blank" rel="noopener">goodreads →</a>
       </footer>
     </div>
