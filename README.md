@@ -13,7 +13,7 @@ Reading one book from each country in 2026.
 
 [![Goodreads](https://img.shields.io/badge/Goodreads-shelf-c9543a?style=flat-square&logo=goodreads&logoColor=white)](https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide)
 ![Python](https://img.shields.io/badge/python-3.x-3776ab?style=flat-square&logo=python&logoColor=white)
-[![Free Palestine](https://img.shields.io/badge/🇵🇸_Free-Palestine-007A3D?style=flat-square)](https://www.unrwa.org)
+[![StandWithPalestine](https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg)](https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md)
 
 </div>
 
@@ -50,6 +50,6 @@ uv pip install -r requirements.txt
 
 <div align="center">
 
-*Recommendations welcome.*
+*Developed with ❤︎*
 
 </div>

@@ -1,0 +1,71 @@
+:root {
+  --bg:          #0f0e0b;
+  --bg2:         #161410;
+  --bg3:         #1e1b16;
+  --surface:     #242019;
+  --border:      #2e2a22;
+  --border2:     #3d3830;
+  --text:        #f0e6d0;
+  --text2:       #a89880;
+  --text3:       #6b5f4e;
+  --gold:        #c9a84c;
+  --gold2:       #e8c97a;
+  --gold-soft:   #c9a84c18;
+  --coral:       #d4694a;
+  --green:       #5a9e72;
+  --blue:        #4a7fa8;
+  --purple:      #8a6bb5;
+  --radius:      12px;
+  --radius-lg:   20px;
+  --shadow:      0 4px 24px rgba(0,0,0,0.4);
+  --shadow-lg:   0 12px 48px rgba(0,0,0,0.6);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Instrument Sans', sans-serif;
+  --font-mono:    'DM Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+/* Leaflet overrides */
+.leaflet-container {
+  background: #0d1117 !important;
+  font-family: var(--font-body) !important;
+}
+.leaflet-popup-content-wrapper {
+  background: var(--surface) !important;
+  border: 1px solid var(--border2) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-lg) !important;
+  color: var(--text) !important;
+  padding: 0 !important;
+}
+.leaflet-popup-content { margin: 0 !important; }
+.leaflet-popup-tip-container { display: none !important; }
+.leaflet-control-zoom a {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--border2) !important;
+}
+.leaflet-control-zoom a:hover { background: var(--bg3) !important; }
+.leaflet-control-attribution {
+  background: var(--bg) !important;
+  color: var(--text3) !important;
+  font-size: 10px !important;
+}
+.leaflet-control-attribution a { color: var(--text3) !important; }
