@@ -2,3 +2,5 @@
 .venv/
 .DS_Store
 out/
+__pycache__/
+node_modules/
