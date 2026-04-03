@@ -24,19 +24,19 @@ jobs:
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: mrworldwide/package-lock.json
+          cache-dependency-path: site/package-lock.json
 
       - name: Install dependencies
-        working-directory: mrworldwide
+        working-directory: site
         run: npm install
 
       - name: Build
-        working-directory: mrworldwide
+        working-directory: site
         run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: mrworldwide/dist
+          path: site/dist
 
   deploy:
     needs: build
