@@ -11,7 +11,7 @@ from regions import REGIONS
 def load_data(filename):
     raw = pd.read_csv(filename, skipfooter=3, engine='python')
     raw.columns = ['Country','Title','Author','Genre','Date','Language',
-                    'Rating','Female_Author','Purchased','Borrowed','Borrowed2']
+                    'Rating','Female_Author']
     raw['Country'] = raw['Country'].str.strip()
 
     raw['Rating'] = (

@@ -12,7 +12,7 @@ TOTAL_COUNTRIES = 196
 def main():
     raw = pd.read_csv(FILENAME, skipfooter=3, engine='python')
     raw.columns = ['Country','Title','Author','Genre','Date','Language',
-                    'Rating','Female_Author','Purchased','Borrowed','Borrowed2']
+                    'Rating','Female_Author']
     raw['Country'] = raw['Country'].str.strip()
 
     raw['Rating'] = (
