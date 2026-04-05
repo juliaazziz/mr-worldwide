@@ -44,7 +44,7 @@ To set up the repo and install all necessary packages with [uv](https://github.c
 ```sh
 uv venv
 source .venv/bin/activate
-uv pip install -r requirements.txt
+uv sync --all-groups
 ```
 
 ---
