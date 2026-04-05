@@ -67,15 +67,21 @@ export default function StatsTab() {
       ratingBuckets[`${r}★`] = (ratingBuckets[`${r}★`] || 0) + 1
     })
 
-    // Best + worst
+    // Best + last read
     const sorted = [...rated].sort((a,b) => b.rating - a.rating)
-    const best  = sorted[0]
-    const worst = sorted[sorted.length - 1]
+    const best = sorted[0]
+
+    const parseDate = d => {
+      if (!d) return 0
+      const [day, mon, yr] = d.split('/')
+      return new Date(yr, mon - 1, day).getTime()
+    }
+    const lastRead = [...read].sort((a,b) => parseDate(b.date) - parseDate(a.date))[0] || null
 
     return {
       read, rated, avgRating, femalePct, langCounts,
       regionRead, regionRatings, genreCounts, byMonth,
-      ratingBuckets, best, worst,
+      ratingBuckets, best, lastRead,
       totalRead: read.length,
     }
   }, [])
@@ -140,8 +146,8 @@ export default function StatsTab() {
         />
       </div>
 
-      {/* Best + worst */}
-      {(stats.best || stats.worst) && (
+      {/* Best + last read */}
+      {(stats.best || stats.lastRead) && (
         <div className="highlights-row">
           {stats.best && (
             <div className="highlight-card highlight-best">
@@ -152,13 +158,13 @@ export default function StatsTab() {
               <div className="highlight-rating">{stars(stats.best.rating)}</div>
             </div>
           )}
-          {stats.worst && stats.worst !== stats.best && (
-            <div className="highlight-card highlight-worst">
-              <div className="highlight-badge">lowest rated</div>
-              <div className="highlight-country">{stats.worst.country}</div>
-              <div className="highlight-title">{stats.worst.title}</div>
-              <div className="highlight-author">by {stats.worst.author}</div>
-              <div className="highlight-rating">{stars(stats.worst.rating)}</div>
+          {stats.lastRead && (
+            <div className="highlight-card highlight-last">
+              <div className="highlight-badge">last read</div>
+              <div className="highlight-country">{stats.lastRead.country}</div>
+              <div className="highlight-title">{stats.lastRead.title}</div>
+              <div className="highlight-author">by {stats.lastRead.author}</div>
+              <div className="highlight-date">{stats.lastRead.date} <a className="highlight-rating">{stars(stats.lastRead.rating)}</a> </div>
             </div>
           )}
         </div>
@@ -202,7 +208,7 @@ export default function StatsTab() {
 
         <div className="chart-card">
           <h3 className="chart-title">Top Genres</h3>
-          <p className="chart-sub">from finished books</p>
+          <p className="chart-sub">from books you've finished</p>
           <BarChart data={genreBarData} horizontal />
         </div>
       </div>
@@ -211,7 +217,7 @@ export default function StatsTab() {
       <div className="gender-section">
         <div className="chart-card gender-card">
           <h3 className="chart-title">Author Gender</h3>
-          <p className="chart-sub">from finished books</p>
+          <p className="chart-sub">of books you've read</p>
           <div className="gender-vis">
             <div className="donut-wrap">
               <svg viewBox="0 0 120 120" className="donut-svg">
@@ -253,7 +259,7 @@ export default function StatsTab() {
         {/* Language split */}
         <div className="chart-card">
           <h3 className="chart-title">Reading Language</h3>
-          <p className="chart-sub">% of finished books</p>
+          <p className="chart-sub">original vs translation</p>
           <div className="lang-bars">
             {Object.entries(stats.langCounts)
               .sort((a,b) => b[1]-a[1])
