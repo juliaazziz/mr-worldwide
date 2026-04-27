@@ -24,13 +24,13 @@ Check out the challenge site [here](https://juliaazziz.github.io/mr-worldwide/).
 
 <!-- STATS:START -->
 ```
- Countries read:        42 / 196  (21.4%)
- Average rating:        3.22 / 5.00
- Female authors:        38% of books read
+ Countries read:        43 / 196  (21.9%)
+ Average rating:        3.21 / 5.00
+ Female authors:        40% of books read
  In spanish:            12 books
- In english:            30 books
+ In english:            31 books
 
-  Progress: [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 21.4%
+  Progress: [██████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 21.9%
 
 ```
 <!-- STATS:END -->
