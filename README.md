@@ -1,13 +1,6 @@
 <div align="center">
 
-```
- ███╗   ███╗██████╗       ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ ██╗    ██╗██╗██████╗ ███████╗
- ████╗ ████║██╔══██╗      ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗██║    ██║██║██╔══██╗██╔════╝
- ██╔████╔██║██████╔╝      ██║ █╗ ██║██║   ██║██████╔╝██║     ██║  ██║██║ █╗ ██║██║██║  ██║█████╗  
- ██║╚██╔╝██║██╔══██╗      ██║███╗██║██║   ██║██╔══██╗██║     ██║  ██║██║███╗██║██║██║  ██║██╔══╝  
- ██║ ╚═╝ ██║██║  ██║      ╚███╔███╔╝╚██████╔╝██║  ██║███████╗██████╔╝╚███╔███╔╝██║██████╔╝███████╗
- ╚═╝     ╚═╝╚═╝  ╚═╝       ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═════╝  ╚══╝╚══╝ ╚═╝╚═════╝ ╚══════╝
-```
+# Mr. Worldwide
 
 Reading one book from each country in 2026.
 
@@ -20,6 +13,10 @@ Reading one book from each country in 2026.
 ## About
 
 [Goodreads](https://www.goodreads.com/review/list/102139159-julia-azziz?shelf=mr-worldwide) saw it first.
+
+<div align="center">
+  <img src="assets/map_screenshot.png" alt="Interactive colored map showing books by region and rating" width="90%">
+</div>
 
 Check out the challenge site [here](https://juliaazziz.github.io/mr-worldwide/).
 
